@@ -27,7 +27,7 @@ const ProgressSection = () => {
     }
 
     return <>
-        <ProgressElement epic={new EpicModel("Gesamtfortschritt", progress)} />
+        <ProgressElement epic={new EpicModel("Gesamtfortschritt (" + progress + "%)", progress)} />
         <br />
         <br />
         {epics.map((epic) => (
